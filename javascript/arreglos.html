@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:/GenerationC2/css/styles.css">
+</head>
+
+<body>
+    <script>
+        //arreglo = tamaño predefinido, no puede cambiar
+        // lista = tamaño dinamico
+        var vocales = ["a", "u", "i", "e", "o"];
+        // tiene 5 elementos, el ultimo esta en la posicion 4
+        // el primero esta en la posicion 0
+        console.log(vocales);
+        // lenght = cantidad de elementos dentro del arreglo
+        console.log("********POSICIONES********");
+        console.log(vocales[0]);
+        console.log(vocales[1]);
+        console.log(vocales[2]);
+        console.log(vocales[3]);
+        console.log(vocales[4]);
+        console.log(vocales[5]);
+        console.log(vocales[1.2]);
+        console.log(vocales[3 - 2]); // Vocal en la posición 1
+        console.log(vocales[3] + [2]); // Dice e2 xd
+        console.log(vocales[0, 1]); // solo arroja la pos 1
+        console.log(vocales[0], vocales[1]); // a u
+
+        console.log("********Sobreposición********");
+        vocales[1] = "y";
+        console.log(vocales);
+        console.log("********PUSH********");
+        vocales.push("i"); // PUSH agrega un dato al final
+        console.log(vocales);
+        console.log("********POP********");
+        vocales.pop(); // Pop elimina el último dato.
+        vocales.pop();
+        vocales.pop();
+        vocales.pop();
+        console.log(vocales);
+
+        console.log("********.length********");
+        var arreglo1 = []; // Arreglo vacío, tamaño 0
+        console.log(arreglo1.length);
+        arreglo1.push(1);
+        arreglo1.push(8);
+        var ultimo = arreglo1.pop();
+        console.log(ultimo);
+
+        /* vocales = "aeiou";
+        console.log(vocales);
+        console.log(vocales[3]);
+        // Los ruts son strings 19.323.324-2
+        vocales.push()  */
+    </script>
+</body>
+
+</html>
