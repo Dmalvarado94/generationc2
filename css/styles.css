@@ -1,0 +1,11 @@
+html,
+body {
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.titulo {
+    text-align: center;
+    background-color: aqua;
+}
