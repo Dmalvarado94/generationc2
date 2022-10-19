@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bucles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:/GenerationC2/css/styles.css">
+</head>
+
+<body>
+    <script>
+        // bucle FOR     la variable está dentro del parentesis porque afectará solo al ciclo for
+
+        for (let i = 0; i < 10; i++) {
+            console.log("el valor de i es", i);
+        }
+        //        respuesta : el valor de i es 0
+        //respuesta : el valor de i es 1
+        //respuesta : el valor de i es 2
+        //respuesta : el valor de i es 3
+        //respuesta : el valor de i es 4
+        //        respuesta : el valor de i es 5...
+
+        console.clear();
+        var numeros_pares = [2, 4, 6, 8, 10];
+        numeros_pares[0];
+        console.log("el arreglo es", numeros_pares);
+        /*
+        numeros_pares [numeros_pares.length-1] ; 
+        numeros_pares [5-1];
+        numeros_pares [4];*/
+        for (let i = 0; i < numeros_pares.length; i++) { //i=1
+            console.log("la posicion es", i);
+            console.log("el elemento es", numeros_pares[i]);
+            console.log("");
+        }
+
+        // var: Para la creacion de variables globales
+        // let: solo para bloques especificos como el for
+        // const: bloques específicos, pero se recomienda 
+        //para establecer variables constantes
+
+        var suma_pares = 0;
+        for (let i = 0; i < numeros_pares.length; i++) {
+            suma_pares = suma_pares + numeros_pares[i];
+            console.log(suma_pares);
+        }
+    </script>
+</body>
+
+</html>

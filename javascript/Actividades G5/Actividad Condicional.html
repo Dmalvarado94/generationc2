@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var nombre = prompt("Ingresa tu nombre completo");
+        console.log("Nombre completo:", nombre)
+
+        var edad = parseInt(prompt("Ingresa tu edad", 0));
+        console.log("Edad:", edad)
+
+        var direccion = prompt("Ingresa tu dirección");
+        console.log("Dirección:", direccion)
+
+        var telefono = parseInt(prompt("Ingresa tu número telefonico"));
+        console.log("telefono:", telefono)
+
+        var email = prompt("Ingresa un correo");
+        console.log("email:", email)
+
+        if (edad < 18) {
+            console.log("Lo siento, no te puedes registrar");
+        } else {
+            console.log("Gracias por registrarte!");
+
+            document.write("Bienvenido a Zoolandia ")
+        }
+        document.write('el nombre es:', nombre);
+        document.write("<br>");
+        document.write('Tu edad es: \n', edad);
+        document.write("<br>");
+        document.write('Tu dirección es: \n', direccion);
+        document.write("<br>");
+        document.write('Tu télefono es: \n', telefono);
+        document.write("<br>");
+        document.write('Tu email es: \n', email);
+
+
+        if (isNaN(edad)) {
+            alert("Es un tipo de dato permitido, Gracias por registrarte (Fuiste hackeado)");
+            document.write("La edad es NaN");
+        } else {
+            alert("No es un tipo de dato permitido");
+            document.write("La edad no es NaN");
+        }
+    </script>
+
+</body>
+
+</html>
