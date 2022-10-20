@@ -13,6 +13,8 @@
 <body>
     <script>
         // bucle FOR     la variable está dentro del parentesis porque afectará solo al ciclo for
+        // EL for es bueno cuando queremos repetir un ciclo y CONOCEMOS el
+        // numero de veces a realizar
 
         for (let i = 0; i < 10; i++) {
             console.log("el valor de i es", i);
@@ -48,6 +50,20 @@
             suma_pares = suma_pares + numeros_pares[i];
             console.log(suma_pares);
         }
+
+        //3. Suma impares hasta 5000: Escribe un programa que devuelva la suma de todos los números impares entre 1 y 5000 (ej: 1+3+5+...+4997+4999).
+
+        console.clear();
+
+        var suma = 0;
+        for (var i = 0; i < 5001; i++) {
+
+            if (i % 2 != 0) {
+                suma = suma + i;
+            }
+
+        }
+        console.log(suma);
     </script>
 </body>
 
