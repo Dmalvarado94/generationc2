@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2</title>
+</head>
+
+<body>
+    <script>
+        // Concatenar más elementos a un array 
+
+        var arreglin = [1, 2, 3, 4, 5, 6, 7];
+        var resultado = arreglin.concat(8, 9, 10)
+
+        console.log("Mi array concatenado es ", resultado);
+
+
+        // Unir un array de texto y expresarlo en consola
+
+        var mensaje1 = ["Hola", "Mágico"]
+        var mensaje = mensaje1.join(" Mundo ");
+        console.log(mensaje);
+
+        // Imprimir un array al revés.
+
+        var array = ["a", "b", "c", "d", "e"];
+        console.log("El array original es", array)
+        array.reverse(); // Simplemente añadir esta funcion ()
+        console.log("El array invertido es", array)
+
+        // Imprimir un número con decimales que tu designes.
+
+        const numero = 123.4567;
+        console.log("El numero es", numero);
+        var n = numero.toFixed(2); //Si agregamos parseInt no dejará ver decimales :c
+        console.log("El numero con 2 decimales queda", n);
+    </script>
+
+</body>
+
+</html>

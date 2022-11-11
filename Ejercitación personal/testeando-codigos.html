@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing de código</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:/GenerationC2/css/styles.css">
+</head>
+
+<body>
+    <script>
+        // Arreglos
+        let juegos = ['Zelda', 'Mario', 'Metroid', 'Chrono'];
+        console.log('Largo:', juegos.length);
+
+        let primero = juegos[2 - 2];
+        let ultimo = juegos[juegos.length - 1];
+        console.log({
+            primero,
+            ultimo
+        });
+
+        console.clear();
+
+        // Funciones Modo flecha
+        const sumar = (a, b) => a + b;
+        console.log(sumar(5, 10));
+
+        // Funcion tradicional
+        function sumar1(a, b) {
+            return a + b;
+        }
+        console.log(sumar1(7, 3));
+
+        // Funcion tradicional agregando Var
+        function sumar2(numero1, numero2) {
+            var numero1 = numero1;
+            var numero2 = numero2;
+            return numero1 + numero2;
+        }
+        console.log(sumar2(10, 10));
+
+
+        // Función + array, Necesito que agregues estudiantes
+        // Al equipo generation en un Array
+
+
+        function agregarEstudiante(estudiante) {
+            var generation = ['Israel', 'Alejandro', 'Andrea'];
+            for (let i = 0; i <= generation; i++) {
+                generation.push([i])
+                return generation
+            }
+        }
+        var ingresaEst = parseInt(prompt("ingresa un estudiante", 0));
+        var nuevoestudiante = agregarEstudiante(ingresaEst);
+        console.log("Nuevo estudiante", nuevoestudiante);
+
+        //
+    </script>
+</body>
+
+</html>

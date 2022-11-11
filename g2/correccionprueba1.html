@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba 1</title>
+</head>
+
+<body>
+    <script>
+        /*
+                Don José todos los martes y jueves realiza un 20% de descuento en el total de las compras, 
+                crea una función la cual debe recibir un parámetro del día y 
+                el arreglo de valores de los productos a comprar, 
+                esta debe retornar el total final de la compra según corresponda o no descuento.
+                */
+
+        var dia = "jueves"; //"LUNES"//1=lunes.. 2=martes y 4=jueves ; MaRtEs -> martes
+        dia = dia.toLowerCase();
+        var productos = [1000, 500, 650, 10001]; //10150
+
+        function calculoTotalCompra(pDia, pValoresProductos) { //pDia="lunes";pValoresProductos=[1000,500,650,8000];
+            var totalFinalCompra = 0;
+            var sumaProductos = 0;
+            var mayorDiezMil = false;
+            var contador = 0;
+            for (let i = 0; i < pValoresProductos.length; i++) {
+                sumaProductos = sumaProductos + pValoresProductos[i];
+            }
+            if (pDia.toLowerCase() == "martes" || pDia.toLowerCase() == "jueves") {
+                totalFinalCompra = sumaProductos - (sumaProductos * 0.2) //10150-10150*0.2 o sumaProductos*0.8
+                    //totalFinalCompra =sumaProductos*0.8
+            } else {
+                totalFinalCompra = sumaProductos;
+            }
+
+            //al menos 1 producto es mayor a 10000
+            for (let i = 0; i < pValoresProductos.length; i++) {
+                if (pValoresProductos[i] > 10000) {
+                    mayorDiezMil = true;
+                    contador++;
+                }
+            }
+
+            if (pValoresProductos.length > 3 && contador > 0) {
+                //if(pValoresProductos.length > 3 && mayorDiezMil){
+                totalFinalCompra = totalFinalCompra * 0.95
+            }
+
+
+            return totalFinalCompra;
+        }
+        var total = calculoTotalCompra(dia, productos);
+        console.log("El total de la compra es", total);
+
+
+        /*
+        Don José hace un 5% de descuento a los clientes que compran más de 3 productos y 
+        al menos uno de ellos tiene un valor mayor a 10.000, 
+        realiza una función que calcule el total verificando si corresponde o no el descuento.
+        */
+
+        var cantidad = productos.length;
+
+
+        /* 
+        Dado el siguiente arreglo [200,5500,900,7000,500,300] con los valores de cada producto
+        ○ Crea una función que retorne el valor del producto más costoso.
+        ○ Crea una función que retorne el valor del producto menos costoso.
+        */
+
+        var arreglo2 = [200, 5500, 900, 7000, 500, 300];
+
+        function masCostoso() {
+            var maximo = arreglo2[0];
+            for (let i = 0; i < arreglo2.length; i++) {
+                if (maximo < arreglo2[i]) {
+                    maximo = arreglo2[i];
+                }
+            }
+            return maximo;
+        }
+        var max = masCostoso();
+        console.log("el mas costoso es", max);
+
+        function menosCostoso() {
+            var minimo = arreglo2[0];
+            for (let i = 0; i < arreglo2.length; i++) {
+                if (minimo > arreglo2[i]) {
+                    minimo = arreglo2[i];
+                }
+            }
+            return minimo;
+        }
+        var min = menosCostoso();
+        console.log("El menos costoso es", min);
+    </script>
+</body>
+
+</html>

@@ -44,15 +44,55 @@
 
         //4. Itera un array: Escribe un programa que devuelva la suma de todos los valores dentro de un array (ej:  [1,2,5] retorna 8. [-5,2,5,12] retorna 14). 
 
+        console.clear();
+        var sumarArray = 0; // Si no específicamos la variable con un valor numérico te dará un NaN.
+        var array = [1, 2, 5, 6, 7, 1];
+        for (let indice = 0; indice <= array.length - 1; indice++) { // Aquí cambiamos i por indice, para una mejor lectura.
+            sumarArray = sumarArray + array[indice];
+        }
+        console.log(sumarArray);
 
         //5. Encuentra el mayor (max): Dado un array con múltiples valores, escribe un programa que devuelva el número mayor (ej: para [-3,3,5,7] el número mayor (max) es 7). 
+        console.clear();
 
+        var arrayMayor = [-20, -10, 10, 20, 50];
+        var numeroMayor = 0;
+        for (let indice = 0; indice <= arrayMayor.length; indice++) {
+            if (arrayMayor[4] > arrayMayor[indice]) {
+                numeroMayor = arrayMayor[4]; // No olvides especificar los [indices], si no los especificas no saldrían
+            }
+            console.log(numeroMayor);
+        }
 
         //6. Encuentra el promedio (avg): Dado un array con múltiples valores, escribe un programa que devuelva el promedio de los valores (ej: para [1,3,5,7,20] el promedio es 7.2).
+        console.clear();
+
+        var arrayProm = [1, 5, 10, 15, 29];
+        var sumaProm = 0;
+        for (let p = 0; p <= arrayProm.length - 1; p++) {
+            sumaProm = sumaProm + arrayProm[p];
+        }
+        var promedio = sumaProm / arrayProm.length
+        console.log("La suma del array es", sumaProm);
+        console.log("El promedio es", promedio);
+
 
 
 
         //7. Array de impares: Escribe un programa que devuelva un array de todos los números impares entre 1 y 50 (ej: [1,3,5, …, 47,49]). Pista: Usa el método ‘push’.
+        /*
+       
+        console.clear();
+        const arrayImpar = [];
+        for (let i = 0; i <= 50; i++) {
+            if (i % 2 != 0) {
+                arrayImpar.push([i] + " Impar") /// SIEMPRE después de una función va un (), ej impar.push(Y aquí ingresamos lo que queremos []."", etc)
+            } else {
+                arrayImpar.push([i] + " PAR")
+            }
+        }
+
+        console.log(arrayImpar)  */
     </script>
 </body>
 
