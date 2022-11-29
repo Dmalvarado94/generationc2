@@ -19,5 +19,62 @@
     <br>
     <label for="password">Ingrese Contraseña</label>
     <input type="password" id="pass" name="password" placeholder="Ingrese password">
+<br><hr>
+    <!--Radio button-->
+    <h1>Radio Buttons</h1>
+    <label for="femenino">Femenino</label>
+    <input type="radio" id="femenino" name="sexo" value="femenino">
+<br>
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="masculino" name="sexo" value="masculino">
+<br>
+    <label for="pnd">Prefiero no decir</label>
+    <input type="radio" id="pnd" name="sexo" value="pnd">
+<br><hr>
+    <!--Select o combobox-->
+    <h2>Selectores</h2>
+    <select name="sexo2" id="sexo2">
+        <option value="0">Género</option>
+    <option value="femenino">femenino</option>
+    <option value="masculino">masculino</option>
+    <option value="pnd">Prefiero no decir</option>
+    </select>
+    <hr><br>
+
+    <!--Checkbox nos permite seleccionar mas de una opcion-->
+    <h2>Checkbox</h2>
+    <label for="lunes">lunes</label>
+    <input type="checkbox" id="lunes" name="semana" value="1">
+    <br>
+    <label for="martes">martes</label>
+    <input type="checkbox" id="martes" name="semana" value="2">
+    <br>
+    <label for="miercoles">miercoles</label>
+    <input type="checkbox" id="miercoles" name="semana" value="3">
+    <br>
+    <label for="jueves">jueves</label>
+    <input type="checkbox" id="jueves" name="semana" value="4">
+    <br>
+    <label for="viernes">viernes</label>
+    <input type="checkbox" id="viernes" name="semana" value="5">
+<br><hr>
+
+<!--TextArea es un cuadro para ingresar texto grande-->
+<h2>Textarea</h2>
+<textarea name="descripcion" id="descripcion" cols="80" rows="10" ></textarea>
+<br><hr>
+
+<!--Hidden es un cuadro oculto-->
+<h2>Hidden</h2>
+<input type="hidden" id name="">
+<br><hr>
+
+<!--Botones o button le añadimos un onclick alert, el submit lo que hace es enviar datos.-->
+<h2>Button o botones</h2>
+<input type="button" id name="" value="Aceptar" onclick="alert('hola')">
+<input type="submit" value="Enviar">
+<br><hr>
+
+
 </body>
 </html>
