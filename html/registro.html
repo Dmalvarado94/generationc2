@@ -7,6 +7,27 @@
     <title>Registro</title>
 </head>
 <body>
+    <!--action = ruta donde enviamos los parametros-->
+    <!--method = forma en la cual se envía, existe get y post-->
+    <!--get muestra los parametros, post los envía.-->
+    <form action="ruta" method="get">
+
+        <!-- Etiquetas, el id debe ser único para cada input.-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <label for="correo">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="password">Ingrese Contraseña</label>
+        <input type="password" id="pass" name="password" placeholder="Ingrese password">
+<br>
+        <input type="submit" value="Enviar" onclick="alert('Gracias por enviar mi CV')">
+    </form>
+    <br><hr>
     
 </body>
 </html>
